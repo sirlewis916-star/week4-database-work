@@ -1,0 +1,33 @@
+USE classicmodels;
+SELECT TOP 5
+    paymentDate,
+    SUM(amount) AS total_amount
+FROM payments
+GROUP BY paymentDate
+ORDER BY paymentDate DESC;
+
+
+
+USE classicmodels;
+SELECT customerName, country, AVG(creditLimit) AS average_credit_limit
+FROM customers
+GROUP BY customerName, country;
+
+
+
+
+
+USE classicmodels;
+SELECT productCode, quantityOrdered, SUM(quantityOrdered * priceEach) AS total_price
+FROM orderdetails
+GROUP BY productCode, quantityOrdered;
+
+
+
+
+
+
+USE classicmodels;
+SELECT checkNumber, MAX(amount) AS highest_amount
+FROM payments
+GROUP BY checkNumber;
