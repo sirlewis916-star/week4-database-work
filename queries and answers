@@ -22,9 +22,15 @@ SELECT customerName, country, AVG(creditLimit) AS average_credit_limit
 FROM customers
 GROUP BY customerName, country;
 
+##result
+customerName | country | average_credit_limit
+Atelier graphique | France | 21000.00
+Signal Gift Stores | USA | 71800.00
+Australian Collectors | Australia | 117300.00
 
 
 
+#query
 USE classicmodels;
 SELECT productCode, quantityOrdered, SUM(quantityOrdered * priceEach) AS total_price
 FROM orderdetails
