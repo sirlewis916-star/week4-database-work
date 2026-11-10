@@ -36,8 +36,14 @@ SELECT productCode, quantityOrdered, SUM(quantityOrdered * priceEach) AS total_p
 FROM orderdetails
 GROUP BY productCode, quantityOrdered;
 
+##result
 
-
+productCode | quantityOrdered | total_price
+S18_1749 | 30 | 4080.00
+S18_2248 | 50 | 2754.50
+S18_1749 | 20 | 2720.00
+S24_1937 | 25 | 800.00
+### Q4: Highest payment per check
 
 
 
@@ -45,3 +51,11 @@ USE classicmodels;
 SELECT checkNumber, MAX(amount) AS highest_amount
 FROM payments
 GROUP BY checkNumber;
+
+##result
+checkNumber | highest_amount
+HQ336336 | 6066.78
+JM555205 | 14571.44
+OM314933 | 1676.14
+HQ55022 | 5000.00
+BOFA97525 | 10000.00
