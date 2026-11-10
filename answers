@@ -1,0 +1,28 @@
+
+paymentDate | total_amount
+2004-12-31 | 10000.00
+2004-12-18 | 1676.14
+2004-10-19 | 6066.78
+2003-06-06 | 5000.00
+2003-06-05 | 14571.44
+
+customerName | country | average_credit_limit
+Atelier graphique | France | 21000.00
+Signal Gift Stores | USA | 71800.00
+Australian Collectors | Australia | 117300.00
+
+
+productCode | quantityOrdered | total_price
+S18_1749 | 30 | 4080.00
+S18_2248 | 50 | 2754.50
+S18_1749 | 20 | 2720.00
+S24_1937 | 25 | 800.00
+### Q4: Highest payment per check
+
+
+checkNumber | highest_amount
+HQ336336 | 6066.78
+JM555205 | 14571.44
+OM314933 | 1676.14
+BOFA97525 | 10000.00
+HQ55022 | 5000.00
