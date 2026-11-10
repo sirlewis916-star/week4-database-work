@@ -7,12 +7,20 @@ GROUP BY paymentDate
 ORDER BY paymentDate DESC;
 
 
+##result
+paymentDate | total_amount
+2004-12-31 | 10000.00
+2004-12-18 | 1676.14
+2004-10-19 | 6066.78
+2003-06-06 | 5000.00
+2003-06-05 | 14571.44
 
+
+#query
 USE classicmodels;
 SELECT customerName, country, AVG(creditLimit) AS average_credit_limit
 FROM customers
 GROUP BY customerName, country;
-
 
 
 
